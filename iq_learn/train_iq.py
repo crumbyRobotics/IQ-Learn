@@ -41,7 +41,7 @@ def get_args(cfg: DictConfig):
 @hydra.main(config_path="conf", config_name="config")
 def main(cfg: DictConfig):
     args = get_args(cfg)
-    wandb.init(project=args.project_name, entity='iq-learn',
+    wandb.init(project=args.project_name, entity='ryo634tacky',
                sync_tensorboard=True, reinit=True, config=args)
 
     # set seeds
