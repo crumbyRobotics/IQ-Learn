@@ -1,5 +1,3 @@
-iq_learn/venv/
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -133,3 +131,4 @@ dmypy.json
 # Ignored folders
 iq_learn/outputs
 iq_learn/wandb
+iq_learn/vis

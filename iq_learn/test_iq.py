@@ -48,7 +48,7 @@ def main(cfg: DictConfig):
     if args.eval_only:
         exit()
 
-    measure_correlations(agent, env, args, log=True)
+    # measure_correlations(agent, env, args, log=True)
 
 
 def measure_correlations(agent, env, args, log=False, use_wandb=False):

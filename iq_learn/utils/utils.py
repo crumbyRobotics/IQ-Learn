@@ -44,6 +44,9 @@ def evaluate(actor, env, num_episodes=10, vis=True):
                 next_state, reward, done, info = env.step(action)
                 state = next_state
 
+                if vis:
+                    env.render(mode="human")
+
                 if 'episode' in info.keys():
                     total_returns.append(info['episode']['r'])
                     total_timesteps.append(info['episode']['l'])

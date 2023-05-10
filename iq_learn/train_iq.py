@@ -136,7 +136,7 @@ def main(cfg: DictConfig):
             steps += 1
 
             if learn_steps % args.env.eval_interval == 0:
-                eval_returns, eval_timesteps = evaluate(agent, eval_env, num_episodes=args.eval.eps)
+                eval_returns, eval_timesteps = evaluate(agent, eval_env, num_episodes=args.eval.eps, vis=False)
                 returns = np.mean(eval_returns)
                 learn_steps += 1  # To prevent repeated eval at timestep 0
                 logger.log('eval/episode_reward', returns, learn_steps)
